@@ -1,0 +1,27 @@
+.form__wrapper {
+  width: 100%;
+  max-width: 350px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 1rem;
+
+  background: blue;
+}
+
+.form__input {
+  padding: 1rem;
+
+  flex: 1;
+  min-width: 0;
+
+  background: red;
+}
+
+.form__icon-wrapper {
+  width: 10px;
+  height: 10px;
+
+  background: gold;
+}

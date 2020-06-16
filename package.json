@@ -1,0 +1,62 @@
+{
+  "name": "google-keep-wrapper",
+  "version": "1.0.0",
+  "description": "A tiny PWA application wrapper for Google Keep Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel public/index.html --out-dir development -p 3000",
+    "pre-deploy": "parcel build public/index.html --out-dir dist --public-url /google-keep-wrapper && workbox generateSW",
+    "deploy": "node publish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaksCastro/google-keep-wrapper.git"
+  },
+  "keywords": [
+    "javascript",
+    "pwa",
+    "google",
+    "keep",
+    "wrapper",
+    "desktop",
+    "app"
+  ],
+  "author": "Laks Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaksCastro/google-keep-wrapper/issues"
+  },
+  "homepage": "https://github.com/LaksCastro/google-keep-wrapper/#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "gh-pages": "^3.0.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-pwa-manifest": "^3.0.6",
+    "sass": "^1.26.3",
+    "typescript": "^3.9.5",
+    "workbox-cli": "^5.1.3"
+  },
+  "pwaManifest": {
+    "name": "Google Keep Wrapper",
+    "shortName": "Google Keep Wrapper",
+    "startURL": "/google-keep-wrapper/",
+    "theme": "#F4B607",
+    "generateIconOptions": {
+      "baseIcon": "./public/favicon.svg",
+      "sizes": [
+        32,
+        64,
+        192,
+        384,
+        512,
+        780
+      ],
+      "genFavicons": true
+    }
+  },
+  "dependencies": {
+    "parse-link-header": "^1.0.1"
+  }
+}
