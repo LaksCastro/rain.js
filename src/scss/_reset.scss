@@ -21,6 +21,8 @@ body {
 body {
   --logo-primary: #471a7c;
   --logo-secondary: #651ca6;
+
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {

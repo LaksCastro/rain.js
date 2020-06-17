@@ -26,9 +26,12 @@ $radius: 4px;
 
   background: var(--background-primary);
   border-radius: $radius;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .form__input {
+  color: var(--text-normal);
+
   padding: 1rem;
 
   flex: 1;
@@ -39,6 +42,10 @@ $radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  * {
+    fill: var(--text-normal);
+  }
 }
 
 .form__button-submit {
@@ -46,8 +53,7 @@ $radius: 4px;
 
   border-radius: $radius;
 
-  max-width: 350px;
-  width: 100%;
+  max-width: 100%;
 
   margin-top: 1rem;
 
@@ -60,6 +66,8 @@ $radius: 4px;
   color: #fff;
 
   cursor: pointer;
+
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 
   &:hover {
     background: var(--logo-secondary);

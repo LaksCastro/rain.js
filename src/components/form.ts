@@ -33,23 +33,32 @@ export default function Form(): Form {
 
     loader.show();
 
-    const api = Api(username);
+    try {
+      const api = Api(username);
 
-    if (!(await api.isValidUser())) {
-      label.showError("Invalid username :(");
-    } else {
-      const starsCount = await api.getStarsCount();
+      if (!(await api.isValidUser())) {
+        label.showError("Invalid username :(");
+      } else {
+        label.hideError();
 
-      const index = utils.randomInt(0, starsCount - 1);
+        const starsCount = await api.getStarsCount();
 
-      const { name, url } = await api.getRepoFromIndex(index);
+        if (starsCount === 0)
+          return label.showError("This user not have starred repositories :(");
 
-      console.log(name + ": " + url);
+        const index = utils.randomInt(0, starsCount - 1);
 
-      link.showLink(name, url);
+        const { name, url } = await api.getRepoFromIndex(index);
+
+        console.log(name + ": " + url);
+
+        link.showLink(name, url);
+      }
+    } catch (e) {
+      label.showError("Ops, something wrong, reload the page");
+    } finally {
+      loader.hide();
     }
-
-    loader.hide();
   }
 
   function start(): void {

@@ -2715,6 +2715,11 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+ethereal-color@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ethereal-color/-/ethereal-color-0.0.5.tgz#75b74bf73dfa280ad859ea3c7564aa42c2a84fa4"
+  integrity sha512-wrZkKuPiZBzaRowZyTCxsvnP5QP2j7uZp0zSRyf21/UE104D2k7oQSA2peqI9fY6yx0s88bf62HMGl+iLLKw4w==
+
 events@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.1.0.tgz#84279af1b34cb75aa88bf5ff291f6d0bd9b31a59"

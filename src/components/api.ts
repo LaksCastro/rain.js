@@ -21,15 +21,19 @@ export default function Api(username: string) {
   }
 
   async function getStarsCount(): Promise<number> {
-    const response = await fetch(baseURL + username + "/starred?per_page=1");
+    try {
+      const response = await fetch(baseURL + username + "/starred?per_page=1");
 
-    let link = new Map(response.headers.entries()).get("link");
+      let link = new Map(response.headers.entries()).get("link");
 
-    const {
-      last: { page: starsCount },
-    } = parseLinkHeader(link);
+      const {
+        last: { page: starsCount },
+      } = parseLinkHeader(link);
 
-    return starsCount;
+      return starsCount;
+    } catch (e) {
+      return 0;
+    }
   }
 
   async function getRepoFromIndex(index: number): Promise<Repo> {
