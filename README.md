@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/public/favicon.png" width="150">
+  <img src="./public/favicon.png" width="150">
   <h1 align="center">Endless Gradients</h1>
   <p align="center">A sample project using Ethereal Color Library</p>
   <p align="center">
@@ -34,5 +34,5 @@ To learn more about the library, [visit the repository](https://github.com/LaksC
 </p>
 <p align="center">Random Starred Repo <a href="https://github.com/LaksCastro/endless-gradients/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
 <p align="center">
-  <img src="./src/public/favicon.png" width="35" />
+  <img src="./public/favicon.png" width="35" />
 </p>
