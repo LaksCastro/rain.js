@@ -16,15 +16,9 @@
 </p>
 
 ## What is?
-A small example project using the Ethereal Color library, [you can check it out here](https://lakscastro.github.io/endless-gradients)
+A tiny project using the [Github API v3](https://developer.github.com/v3/) to show for you random repositories that you starred before, so.
 
-## Library
-To learn more about the library, [visit the repository](https://github.com/LaksCastro/ethereal-color)
-
-<br>
-<br>
-<br>
-<br>
+A tiny project using the Github API v3 to show for you random repositories that you starred before, yes, only that.
 
 <h2 align="center">
   Open Source
