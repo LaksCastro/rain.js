@@ -15,6 +15,10 @@
   </p>
 </p>
 
+
+## Live
+The project is available in [this link](https://lakscastro.github.io/random-starred-repo/), enjoy :D
+
 ## What is?
 A tiny project using the [Github API v3](https://developer.github.com/v3/) to show for you random repositories that you starred before, yes, only that.
 
