@@ -1,9 +1,14 @@
 import parseLinkHeader from "parse-link-header";
 
+type Repo = {
+  url: string;
+  name: string;
+};
+
 export type API = {
   isValidUser: () => Promise<boolean>;
   getStarsCount: () => Promise<number>;
-  getRepoURLFromIndex: (index: number) => Promise<string>;
+  getRepoFromIndex: (index: number) => Promise<Repo>;
 };
 
 export default function Api(username: string) {
@@ -27,22 +32,27 @@ export default function Api(username: string) {
     return starsCount;
   }
 
-  async function getRepoURLFromIndex(index: number): Promise<string> {
+  async function getRepoFromIndex(index: number): Promise<Repo> {
     index++;
 
     const response = await fetch(
       baseURL + username + "/starred?per_page=1&page=" + index
     );
 
-    const [{ html_url: url }] = await response.json();
+    const [{ html_url: url, name }] = await response.json();
 
-    return url;
+    const repo: Repo = {
+      url,
+      name,
+    };
+
+    return repo;
   }
 
   const self: API = {
     isValidUser,
     getStarsCount,
-    getRepoURLFromIndex,
+    getRepoFromIndex,
   };
 
   return Object.freeze(self);

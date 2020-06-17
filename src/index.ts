@@ -1,18 +1,11 @@
-import Api from "./components/api";
+import "boxicons";
 
-import Utils from "./components/utils";
+import Form from "./components/form";
 
-(async function () {
-  // const api = Api("LaksCastro");
-  // const utils = Utils();
-  // try {
-  //   console.log(await api.isValidUser());
-  //   const starsCount = await api.getStarsCount();
-  //   console.log(starsCount);
-  //   const index = utils.randomInt(0, starsCount - 1);
-  //   console.log(await api.getRepoURLFromIndex(index));
-  // } catch (error) {
-  //   console.log("u good? -no");
-  //   console.log(error);
-  // }
-})();
+window.addEventListener("DOMContentLoaded", function () {
+  console.log("All projects will appear here, enjoy! :D");
+
+  const form = Form();
+
+  form.start();
+});

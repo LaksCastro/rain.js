@@ -1,0 +1,28 @@
+.loader {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 6px;
+  width: 0%;
+  background: var(--logo-primary);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  &.loader--loading {
+    animation: loader 1s ease-in-out 0s infinite;
+  }
+  &.loader--static {
+    animation: none;
+  }
+  @keyframes loader {
+    0% {
+      width: 0%;
+      left: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+      left: 100%;
+    }
+  }
+}

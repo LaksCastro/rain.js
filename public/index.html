@@ -6,17 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../src/scss/styles.scss">
 
+  <script src="https://cdn.jsdelivr.net/npm/ripplet.js@0.2.0/umd/ripplet-declarative.min.js"></script>
+
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 
-  <title>Google Keep Wrapper</title>
+  <title>Random Starred Repositories</title>
 </head>
 
 <body>
   <form class="form__wrapper">
-    <input type="text" class="form__input">
-    <div class="form__icon-wrapper"></div>
+    <a class="success-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+    <p class="error-label"></p>
+    <div class="input__wrapper" data-ripplet>
+      <input placeholder="Your Github username" type="text" class="form__input">
+      <div class="form__icon-wrapper">
+        <box-icon type='logo' name='github'></box-icon>
+      </div>
+    </div>
+    <button class="form__button-submit" type="submit" data-ripplet>Search a random repo</button>
   </form>
-  <button type="submit">Start</button>
+  <div class="loader loader"></div>
 </body>
 
 <script src="../src/index.ts"></script>

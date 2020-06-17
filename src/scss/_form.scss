@@ -1,13 +1,31 @@
+$radius: 4px;
+
 .form__wrapper {
   width: 100%;
-  max-width: 350px;
+  height: 100%;
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.input__wrapper {
+  margin-top: 1rem;
+
+  width: 100%;
+  max-width: 450px;
 
   display: flex;
   align-items: center;
 
   padding: 0 1rem;
 
-  background: blue;
+  background: var(--background-primary);
+  border-radius: $radius;
 }
 
 .form__input {
@@ -15,13 +33,35 @@
 
   flex: 1;
   min-width: 0;
-
-  background: red;
 }
 
 .form__icon-wrapper {
-  width: 10px;
-  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  background: gold;
+.form__button-submit {
+  padding: 1rem 2rem;
+
+  border-radius: $radius;
+
+  max-width: 350px;
+  width: 100%;
+
+  margin-top: 1rem;
+
+  transition: all 0.2s ease-in-out;
+
+  background: var(--logo-primary);
+
+  font-weight: bold;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  &:hover {
+    background: var(--logo-secondary);
+  }
 }

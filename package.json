@@ -1,32 +1,32 @@
 {
-  "name": "google-keep-wrapper",
+  "name": "random-starred-repo",
   "version": "1.0.0",
-  "description": "A tiny PWA application wrapper for Google Keep Website",
+  "description": "A tiny website to open random repositories that you starred",
   "main": "index.js",
   "scripts": {
     "dev": "parcel public/index.html --out-dir development -p 3000",
-    "pre-deploy": "parcel build public/index.html --out-dir dist --public-url /google-keep-wrapper && workbox generateSW",
+    "pre-deploy": "parcel build public/index.html --out-dir dist --public-url /random-starred-repo && workbox generateSW",
     "deploy": "node publish.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LaksCastro/google-keep-wrapper.git"
+    "url": "https://github.com/LaksCastro/random-starred-repo.git"
   },
   "keywords": [
     "javascript",
     "pwa",
-    "google",
-    "keep",
-    "wrapper",
-    "desktop",
-    "app"
+    "github",
+    "api",
+    "starred",
+    "repo",
+    "repository"
   ],
   "author": "Laks Castro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LaksCastro/google-keep-wrapper/issues"
+    "url": "https://github.com/LaksCastro/random-starred-repo/issues"
   },
-  "homepage": "https://github.com/LaksCastro/google-keep-wrapper/#readme",
+  "homepage": "https://lakscastro.github.io/random-starred-repo",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-runtime": "^7.9.0",
@@ -41,7 +41,7 @@
   "pwaManifest": {
     "name": "Google Keep Wrapper",
     "shortName": "Google Keep Wrapper",
-    "startURL": "/google-keep-wrapper/",
+    "startURL": "/random-starred-repo/",
     "theme": "#F4B607",
     "generateIconOptions": {
       "baseIcon": "./public/favicon.svg",
@@ -57,6 +57,7 @@
     }
   },
   "dependencies": {
+    "boxicons": "^2.0.5",
     "parse-link-header": "^1.0.1"
   }
 }
