@@ -16,9 +16,12 @@
 </p>
 
 ## What is?
-A tiny project using the [Github API v3](https://developer.github.com/v3/) to show for you random repositories that you starred before, so.
+A tiny project using the [Github API v3](https://developer.github.com/v3/) to show for you random repositories that you starred before, yes, only that.
 
-A tiny project using the Github API v3 to show for you random repositories that you starred before, yes, only that.
+<br>
+<br>
+<br>
+<br>
 
 <h2 align="center">
   Open Source
