@@ -15,6 +15,11 @@
   </p>
 </p>
 
+<p>
+  <img src="./src/assets/pt-br.png" alt="Portuguese" height="16">
+  <a href="https://github.com/LaksCastro/random-starred-repo/blob/master/README-ptbr.md">Ler em português</a>
+</p>
+
 
 ## Live
 The project is available in [this link](https://lakscastro.github.io/random-starred-repo/), enjoy :D
