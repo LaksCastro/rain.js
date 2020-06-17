@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./public/favicon.png" width="150">
-  <h1 align="center">Endless Gradients</h1>
-  <p align="center">A sample project using Ethereal Color Library</p>
+  <h1 align="center">Random Starred Repo</h1>
+  <p align="center">If you are a Github Dev veteran, you have more than 100 starred repo's, so, this project will help you to find cool repo's that you starred in the past</p>
   <p align="center">
     <img src="https://img.shields.io/badge/type-sample-success" alt="Project Type" />
     <img src="https://img.shields.io/badge/bundler-parcel-orange" alt="Repo Type" />
