@@ -16,6 +16,11 @@
 </p>
 
 
+<p>
+  <img src="./src/assets/en.png" alt="English" height="16">
+  <a href="https://github.com/LaksCastro/random-starred-repo/">Read in English</a>
+</p>
+
 ## Live
 O projeto está disponível [neste link](https://lakscastro.github.io/random-starred-repo/), aproveite :D
 
