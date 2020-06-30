@@ -38,7 +38,7 @@ A tiny project using the [Github API v3](https://developer.github.com/v3/) to sh
 <p align="center">
   <sub>Copyright © 2020-present, Laks Castro.</sub>
 </p>
-<p align="center">Random Starred Repo <a href="https://github.com/LaksCastro/endless-gradients/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
+<p align="center">Random Starred Repo <a href="https://github.com/LaksCastro/random-starred-repo/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
 <p align="center">
   <img src="./public/favicon.png" width="35" />
 </p>
