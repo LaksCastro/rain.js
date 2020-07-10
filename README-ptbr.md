@@ -24,8 +24,8 @@
 ## Live
 O projeto está disponível [neste link](https://lakscastro.github.io/random-starred-repo/), aproveite :D
 
-## What is?
-Um pequeno projeto usando a [API v3 do Github](https://developer.github.com/v3/) para mostrar a você repositórios aleatórios que você deu star antes, sim, apenas isso.
+## O que é isso?
+É um pequeno projeto usando a [API v3 do Github](https://developer.github.com/v3/) para mostrar a você repositórios aleatórios que você deu star antes, sim, apenas isso.
 
 <br>
 <br>
