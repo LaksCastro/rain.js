@@ -11,7 +11,7 @@ export type API = {
   getRepoFromIndex: (index: number) => Promise<Repo>;
 };
 
-export default function Api(username: string) {
+export default function Api(username: string): API {
   const baseURL = "https://api.github.com/users/";
 
   async function isValidUser(): Promise<boolean> {
